@@ -1,0 +1,11 @@
+		React With Bootstrap
+- Install Bootstrap Run below Given Commond.
+   
+ >>npm install bootstrap
+ >> npm install @fortawesome/fontawesome-free
+ >> npm install bootstrap        @fortawesome/fontawesome-free
+
+- Add bootstrap and fontawesome in your index.js file.
+  like this
+    import '@fortawesome/fontawesome-   free/css/all.css'
+import 'bootstrap/dist/css/bootstrap.css';

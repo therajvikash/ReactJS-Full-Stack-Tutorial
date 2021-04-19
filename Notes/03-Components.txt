@@ -1,0 +1,29 @@
+			Components 
+		 ==========================
+- React is a components based development process
+What is components?
+- Component is nothing but small part of wepage or ui is called components like (navbar, card home footer .....)
+
+Types of Components 
+1) Functional level components (Stateless components)
+		Ex:- Functional Components
+	import React, {Fragment} from 'react';
+
+	let Navbar  = () => {
+    		return (
+        	<Fragment>
+            	<h2>Welcome to React JS Functional 			Components</h2>
+        	</Fragment>
+    		)
+	}
+export default Navbar; 
+
+install this for shorcut components creation >> ES7 React/Redux/GraphQL/React-Native snippets
+
+
+
+
+
+
+
+
