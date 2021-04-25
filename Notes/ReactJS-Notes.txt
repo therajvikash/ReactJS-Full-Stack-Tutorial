@@ -1,0 +1,312 @@
+		MERN Stack Course
+M --> MongoDB
+E --> Express
+R --> React JS
+N --> NodeJS
+			React JS
+		======================
+- What is React JS
+- Why We use React JS
+- Components 
+- Props
+- State
+- Event Handling
+- conditinal rendering
+- List and Keys
+- LifeCycle Hooks 
+- React Hooks
+	UseEffect
+	UseRef
+	......
+- Routing
+- Form Validation
+- NodeJS(Server Creation With NodeJS and ExpressJS Rest Api NodeJS and Express JS)
+-Rest Api (Get = Fetching data by Using Axios Library, Post = Create , Put = Update Delete)
+- How to connect Mysql database to nodeJS
+- Full Stack Application ==>MERN Stack
+				
+ 			  ReactJS
+			-----------
+What is React JS ?
+- React JS is a Javascript Library.
+- Buliding for Rich Ui.
+- It is an open source.
+- initial release was in 2013
+- Stable -17.0.1 2020
+- Introduced by Facebook.
+
+why We use React JS Or What is the features of ReactJS?
+- It is an open source Library or Framework 
+- React JS USe Virtual Dom That makes the user expericence Better.
+-Faster Interction.
+- It uses JSX, Which is easy to handle the dom manupulation
+	JSX --> [JavaScript + XML]
+- ReactJS Styles 
+          - Bootstrap
+	  - Matrial UI 
+          - Prime React.
+			Software installtion
+	    ============================================
+Install NodeJS :-
+- NodeJS Provide Package Maneger NPM.
+- Package maneger is a tool used to install and config third party Library.
+- It comes with npm , npx
+  >>https://nodejs.org/en/download/ --> node-v14.16.1-x64.msi
+  >>https://code.visualstudio.com/download --> VSCodeUserSetup-x64-1.50.1.exe
+
+install "create-react-app" Tool
+- "create-react-app" is given By facebook.
+     >> npm install -g create-reacte-app
+- g stands for global installation
+- it is used to create-react-app
+
+install Yarn tool
+- used to download 3rd party library and given by facebook.
+ >> npm install -g yarn
+
+
+Installing React Application 
+- Craete dir or folder open With Command prompt or in any editor terminal then run any one of the following cmd
+ >> npx create-react-app my-app
+ >> npm init react-app my-app
+ >> yarn create react-app my-app
+- change dir >> cd first-app
+- run "yarn start" or "npm start"
+
+Note:- When Ever u install React-appliction Make sure you Turn off the antivirus or any security active in your window
+
+  		  
+
+
+			    		Folder structure of React Application
+		      		  ==============================================
+1) node_modules 
+  - node_modules contines libreres third party library. which we will used to excute    React Application
+2) Public 
+   - it comprises of Static File like images txt file ...
+   - These files are chche files
+3) Src 
+   - it is comparises of dynamic file. like js , css...
+   - by default React js comes with app.js component
+  App.js ] both file are by default comes with reactJS
+  App.css ] this css file only for app component
+  App.test.js --> It is used for testing purpose
+  
+4) setupTest.js :- it is also used to test the whole application
+5) reportsWebVitals.js :- It is used to configure prograssive web app.
+
+6) src/index.js
+    - this file called as configration file 
+    - This file is used to configure components
+7) index.css 
+        - it is used for global styles.
+
+8) package.json 
+      - in this we find dependencies of 3rd party library wihich we install to use it 
+
+
+
+         <div id="root">
+
+
+	 </div>
+
+
+<script>
+let p = document.getElementById('root');
+   p = "Welcome To React JS"	
+</script>
+
+
+
+				Components 
+		 	==========================
+- React is a components based development process
+What is components?
+- Component is nothing but small part of wepage or ui is called components like (navbar, card home footer .....)
+
+Types of Components 
+1) Functional level components (Stateless components)
+		Ex:- Functional Components
+	import React, {Fragment} from 'react';
+
+	let Navbar  = () => {
+    		return (
+        	<Fragment>
+            	<h2>Welcome to React JS Functional 			Components</h2>
+        	</Fragment>
+    		)
+	}
+export default Navbar; 
+
+install this for shorcut components creation >> ES7 React/Redux/GraphQL/React-Native snippets
+
+
+
+		step to start given source code in your pc or lapi
+
+1) download source code from github and extract it.
+2) open with VScode.
+3) open terminal [ctrl + `]
+4) npm install 
+5) npm start
+
+
+2) Class level components (Statefull components)
+Ex: Class Level components
+import React from 'react';
+class ClassCard extends React.Component {
+   render() {
+       return(
+           <React.Fragment>
+                <h2> Welcome to Class Level components</h2>
+           </React.Fragment>
+       )
+   }
+}
+export default ClassCard;
+
+
+
+		             React With Bootstrap
+             =====================================================
+- Install Bootstrap Run below Given Commond.
+   
+ >>npm install bootstrap
+ >> npm install @fortawesome/fontawesome-free
+ >> npm install bootstrap @fortawesome/fontawesome-free
+
+- Add bootstrap and fontawesome in your index.js file.
+  like this
+    import '@fortawesome/fontawesome-free/css/all.css'
+    import 'bootstrap/dist/css/bootstrap.css';
+
+
+Note:- In HTML page We are going to using class but in ReactJS We are going To use className instead of class other all thing is same but in css only differance is class and className
+-When ever we are using any inline CSS Like this we can use 
+		<h3 Style={{backgroundColor:"red"}}></h3>
+but in normal CSS
+		style= "background-color:"red";"
+
+
+                         React With Props
+                  =============================
+What is Props?
+- props is a predefined object in Reactjs
+- Props is nothing but share data one components to another/3rd party components.
+- Tranfer data from parent components to child componenents.
+
+- in react we can access any dynamic by using --> {}
+   
+
+				React With State
+			===============================
+- "state" is used to store components data.
+- "state" is predefiend properties of ReactJS.
+- Where defined "state" :- state is defined inside the constructor.
+- constructor is required to initialize state.
+- constructor requires props as arguments to pass into super class construtor.
+- when ever we change an state it will automatically re-render the data.
+- when ever we fetch data from state we need two thing in class based 
+		{this.state.employees(objectName).NameOfData}
+				
+		How To Create state in Class based components
+	===========================================================
+Ex:-
+import React, { Component} from 'react'
+
+export default class StateEx extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            
+        }
+    }
+    render() {
+        return (
+            <React.Fragment>
+                
+            </React.Fragment>
+        )
+    }
+}
+
+				React With State and Props
+		==========================================================
+
+HW
+- copy td and display whole array in web page
+- display object data in we page
+- name, age , course, year display in card format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
