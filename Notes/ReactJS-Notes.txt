@@ -242,6 +242,44 @@ HW
 
 
 
+			
+			React With Events binding
+		 =========================================
+ setState:-
+- "setState" is a predefined object or properties in ReactJS
+- by using "setState" we can change the state
+	this.state = {
+		msg:"hello"
+	}
+     "setState({
+         msg:"Welcome To ReactJS"
+    })" 
+
+What is Event?
+- Event is a message which i have to send by sender to its subscriber to in order to notify the change
+- In ReactJS We use any Events in camelCase.
+- ReactJS used All Browser Events.
+
+			JavaScript
+
+		function fun_one(){
+				
+		}
+<button onclick="fun_one()"></button>
+
+
+			ReactJS
+
+		function fun_one(){
+				
+		}
+<button onClick={fun_one}//this is a Event Handler></button>
+
+- Controller compoents : - it handles the events by using internal  state reaquired an events.
+
+- Uncontroller compoents :- it handles the events  by uisng DOM manipulations. it doesn't reaquired any event binding
+		
+
 
 
 
