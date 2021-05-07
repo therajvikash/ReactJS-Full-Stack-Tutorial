@@ -1,0 +1,7 @@
+.card{
+    border-radius: 33px;
+}
+
+input, textarea, select{
+    border-radius: 30px !important;
+}
