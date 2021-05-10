@@ -280,6 +280,14 @@ What is Event?
 - Uncontroller compoents :- it handles the events  by uisng DOM manipulations. it doesn't reaquired any event binding
 		
 
+			   LifeCycle Method
+                     =============================
+- In any application we have multiple components like card header footer etc. so we need to free some space on the resoures taken by components when they are destroyed.
+
+- This is an inbuilt properties of react library.
+- componentDidMount(){} -> it will execute when page is loaded.
+- componentWillUnmount(){} -> when ever we need to remove components from dom then it is necessary to clear the dom
+
 
 
 
