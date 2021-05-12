@@ -289,6 +289,22 @@ What is Event?
 - componentWillUnmount(){} -> when ever we need to remove components from dom then it is necessary to clear the dom
 
 
+						
+
+		Single Page Application (React Routing)
+	========================================================
+- Loading one component to another component without Refreshing the whole web page  is called as "Single Page application".
+
+- Navigating one component to another component in single page application called as "Routing".
+
+- By using React-Router-dom
+	npm install react-router-dom
+
+- Route , BrowserRouter, Switch -> this is predefiend class in react-router-dom by using this we are writing logic of single page application/routing.
+
+- Navlink, Link it is also predefined class used to define Router Link.
+
+
 
 
 
